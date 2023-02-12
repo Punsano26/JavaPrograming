@@ -1,0 +1,9 @@
+public class Ascii_Test {
+    public static void main(String[] args) {
+        char c ='A' + 3; //การบวกตัวอักษร และ ตัวเลข
+        System.out.println("ASCII of " +c + " is " + (int) c);
+        System.out.println("Convert to Binary number" + Integer.toBinaryString((int)c));
+        
+
+    }
+}
