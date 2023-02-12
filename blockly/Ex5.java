@@ -2,14 +2,13 @@ import java.util.Scanner;
 public class Ex5 {
     public static void main(String[] args){
         Scanner input = new Scanner (System.in);
-        int answer =0;
-        int i = 100;
-        if{
-            (i/3 == 0);
+        int answer =1;
+        for (int i = 1;i <= 100; i++){
+            System.out.println(i);
+           
         }
-        else{
-            System.out.plintln(answer+", "+i);
+        do{
+            System.out.print();
         }
-        System.out.plint(answer);
     }
 }

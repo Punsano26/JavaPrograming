@@ -5,7 +5,7 @@ public class Ex2 {
         int number;
         do{
             System.out.println("push your numbers: ");
-            number = input.nextInt();
+          number = input.nextInt();
         }while(number <= 0);
         System.out.println("you Number is  "+number);
     }
