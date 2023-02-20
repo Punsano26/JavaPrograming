@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Ex2 {
-    public static void main(System[] args){
+    public static void main (String[] ages) {
         Scanner input = new Scanner(System.in);
         System.out.println("Amount ITEMS : ");
         int n = input.nextInt();
