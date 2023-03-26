@@ -69,17 +69,44 @@ public void isPositive(int num, Scanner input) {
 //ข้อหก
  
 public void isOdd(int num, Scanner input) {
+    for(;;){
+        System.out.print("Enter an odd number: ");
+            num = input.nextInt();
+
+            if (num % 2 == 0) {
+                System.out.println(num + " is an even number. Please try again.");
+            } else {
+                System.out.println(num + " is an odd number. Program finished.");
+                break;
+            }
+    }
+}
+
+//ข้อเจ็ด
+
+public void isDividedByN(int n, Scanner input) {
+    int x = 0 ;
     
+    for(int num = n; num%x==0; num++) {
+        System.out.print("n= ");
+    n = input.nextInt();
+    System.out.print("x= ");
+    x = input.nextInt();
+        System.out.println(num);
+        break;
+    }
 }
 
     public static void main(String[] args) {
         Ex1 ex = new Ex1();
         Scanner input = new Scanner(System.in);
-        System.out.println("Please, enter a number: ");
+        // System.out.println("Please, enter a number: ");
         int num = input.nextInt();
         // ex.printType1(num);
         // ex.printType2(num);
-        ex.isPositive(num, input);
+        // ex.isPositive(num, input);
+        // ex.isOdd(num, input); 
+        ex.isDividedByN(num, input);
 
 
         // System.out.println("Please, enter a charactor");
