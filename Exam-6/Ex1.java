@@ -97,6 +97,29 @@ public class Ex1 {
 
     }
 
+    //ข้อแปด
+
+    public void printStarAdvance(int numline, Scanner input) {
+
+        System.out.print("Enter number of Line: ");
+        numline = input.nextInt();
+       
+        for (int i = 1; i <= numline; i++) {
+            System.out.print("*");
+           
+            for (int j = 1; j <= i-1; j++) {
+                System.out.print("_");
+                
+            }
+            if(i>1) {
+            System.out.print("*");
+             }
+
+             System.out.println();
+        }
+        input.close();
+    }
+
     public static void main(String[] args) {
         Ex1 ex = new Ex1();
         Scanner input = new Scanner(System.in);
@@ -106,7 +129,9 @@ public class Ex1 {
         // ex.printType2(num);
         // ex.isPositive(num, input);
         // ex.isOdd(0, input);
-        ex.isDividedByN(0, input);
+        // ex.isDividedByN(0, input);
+        ex.printStarAdvance(0, input);
+
 
         // System.out.println("Please, enter a charactor");
         // String text = input.next();
